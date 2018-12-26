@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e  # exit immediately on error
+set -x  # display all commands
 
 # Build protoc
 if test ! -e src/protoc; then
