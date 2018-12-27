@@ -9,7 +9,7 @@ sudo service docker restart
 
 # Download Docker images from DockerHub
 export DOCKERHUB_ORGANIZATION=protobuftesting
-export RAKE_COMPILER_DOCK_IMAGE=${DOCKERHUB_ORGANIZATION}/rake-compiler-dock_d345250fd426674c3f128f12845d6ed21fb619aa
+export RAKE_COMPILER_DOCK_IMAGE=${DOCKERHUB_ORGANIZATION}/rake-compiler-dock_2c7fd34bd6c6b7631a145dd10b0dd3ea626e1b7a
 
 # All artifacts come here
 mkdir artifacts
