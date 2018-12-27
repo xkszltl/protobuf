@@ -8,7 +8,7 @@ echo 'DOCKER_OPTS="${DOCKER_OPTS} --registry-mirror=https://mirror.gcr.io"' | su
 sudo service docker restart
 
 # Download Docker images from DockerHub
-export DOCKERHUB_ORGANIZATION=grpctesting
+export DOCKERHUB_ORGANIZATION=protobuftesting
 
 # All artifacts come here
 mkdir artifacts
