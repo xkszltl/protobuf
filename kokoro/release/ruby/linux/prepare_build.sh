@@ -8,8 +8,8 @@ echo 'DOCKER_OPTS="${DOCKER_OPTS} --registry-mirror=https://mirror.gcr.io"' | su
 sudo service docker restart
 
 # Download Docker images from DockerHub
-export DOCKERHUB_ORGANIZATION=protobuftesting
-export RAKE_COMPILER_DOCK_IMAGE=${DOCKERHUB_ORGANIZATION}/rake-compiler-dock_e8f17659dbd91e3a77b6c18023cc86e3fb6ac879
+export DOCKERHUB_ORGANIZATION=grpctesting
+export RAKE_COMPILER_DOCK_IMAGE=${DOCKERHUB_ORGANIZATION}/rake-compiler-dock_0cdbbc01e81aefd54a69058f6709a2d566b29c63
 
 # All artifacts come here
 mkdir artifacts
