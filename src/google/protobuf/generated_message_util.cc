@@ -64,7 +64,7 @@ void DestroyMessage(const void* message) {
 }
 void DestroyString(const void* s) { static_cast<const string*>(s)->~string(); }
 
-ExplicitlyConstructed<::std::string> fixed_address_empty_string;
+PROTOBUF_EXPORT ExplicitlyConstructed<::std::string> fixed_address_empty_string;
 
 
 static bool InitProtobufDefaultsImpl() {
