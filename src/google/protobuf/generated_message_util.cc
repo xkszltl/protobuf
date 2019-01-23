@@ -52,6 +52,8 @@
 #include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 
+#include <google/protobuf/stubs/port.h>
+
 namespace google {
 
 namespace protobuf {
@@ -62,7 +64,7 @@ void DestroyMessage(const void* message) {
 }
 void DestroyString(const void* s) { static_cast<const string*>(s)->~string(); }
 
-ExplicitlyConstructed<std::string> fixed_address_empty_string;
+LIBPROTOBUF_EXPORT ExplicitlyConstructed<std::string> fixed_address_empty_string;
 
 double Infinity() {
   return std::numeric_limits<double>::infinity();
